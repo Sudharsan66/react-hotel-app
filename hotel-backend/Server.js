@@ -4,12 +4,6 @@ const app = express();
 
 app.use(cors());
 
-// Or allow only your frontend origin:
-// app.use(cors({
-//   origin: 'http://localhost:5173'
-// }));
-
-app.get('/api/hotels', (req, res) => {
   const hotels = [
     
 
@@ -18,7 +12,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Seaside Paradise",
       "location": "Maldives",
       "rating": 4.9,
-      "imageUrl": "https://example.com/images/seaside-paradise.jpg",
+      "MainimageUrl": "/src/assets/1/hotel1.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-01-01",
         "2024-01-07"
@@ -40,7 +39,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Mountain Retreat",
       "location": "Swiss Alps",
       "rating": 4.7,
-      "imageUrl": "https://example.com/images/mountain-retreat.jpg",
+      "MainimageUrl": "src/assets/2/hotel2.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],     
       "datesOfTravel": [
         "2024-02-15",
         "2024-02-22"
@@ -58,7 +62,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Urban Oasis",
       "location": "New York City, USA",
       "rating": 4.5,
-      "imageUrl": "https://example.com/images/urban-oasis.jpg",
+      "MainimageUrl": "src/assets/3/hotel3.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-03-10",
         "2024-03-17"
@@ -80,7 +89,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Desert Dream",
       "location": "Dubai, UAE",
       "rating": 4.8,
-      "imageUrl": "https://example.com/images/desert-dream.jpg",
+      "MainimageUrl": "src/assets/4/hotel4.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-04-01",
         "2024-04-10"
@@ -102,7 +116,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Tropical Escape",
       "location": "Bali, Indonesia",
       "rating": 4.6,
-      "imageUrl": "https://example.com/images/tropical-escape.jpg",
+      "MainimageUrl": "src/assets/5/hotel5.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-05-01",
         "2024-05-10"
@@ -124,7 +143,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Historic Haven",
       "location": "Rome, Italy",
       "rating": 4.4,
-      "imageUrl": "https://example.com/images/historic-haven.jpg",
+      "MainimageUrl": "src/assets/6/hotel6.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],      
       "datesOfTravel": [
         "2024-06-01",
         "2024-06-07"
@@ -146,7 +170,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Safari Lodge",
       "location": "Serengeti, Tanzania",
       "rating": 4.9,
-      "imageUrl": "https://example.com/images/safari-lodge.jpg",
+      "MainimageUrl": "src/assets/7/hotel7.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-07-10",
         "2024-07-20"
@@ -168,7 +197,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Ocean Breeze",
       "location": "Gold Coast, Australia",
       "rating": 4.3,
-      "imageUrl": "https://example.com/images/ocean-breeze.jpg",
+      "MainimageUrl": "src/assets/8/hotel8.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-08-01",
         "2024-08-10"
@@ -190,7 +224,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Rainforest Retreat",
       "location": "Costa Rica",
       "rating": 4.7,
-      "imageUrl": "https://example.com/images/rainforest-retreat.jpg",
+      "MainimageUrl": "src/assets/9/hotel9.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-09-01",
         "2024-09-15"
@@ -212,7 +251,12 @@ app.get('/api/hotels', (req, res) => {
       "name": "Island Bliss",
       "location": "Hawaii, USA",
       "rating": 4.8,
-      "imageUrl": "https://example.com/images/island-bliss.jpg",
+      "MainimageUrl": "src/assets/10/hotel10.jpg",
+      "imageUrls": [
+        "src/assets/1/hotel1-1.jpg",
+        "src/assets/1/hotel1-2.jpg",
+        "src/assets/1/hotel1-3.jpg"
+      ],
       "datesOfTravel": [
         "2024-10-01",
         "2024-10-10"
@@ -231,8 +275,20 @@ app.get('/api/hotels', (req, res) => {
     }
   ];
 
-  
-  res.json(hotels); 
+
+app.get('/api/hotels', (req, res) => {
+  res.json(hotels);
+});
+
+app.get('/api/hotels/:id', (req, res) => {
+  const hotelId = parseInt(req.params.id); 
+  const hotel = hotels.find(h => h.id === hotelId); 
+
+  if (hotel) {
+    res.json(hotel); 
+  } else {
+    res.status(404).json({ error: 'Hotel not found' }); 
+  }
 });
 
 const port = 5000;

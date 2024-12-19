@@ -4,7 +4,7 @@
     "name": "Seaside Paradise",
     "location": "Maldives",
     "rating": 4.9,
-"imageUrl": "https://example.com/images/seaside-paradise.jpg",
+"imageUrl": "src/assets/hotel1.jpg",
 "datesOfTravel": ["2024-01-01", "2024-01-07"],
 "boardBasis": "All Inclusive",
 "rooms": [

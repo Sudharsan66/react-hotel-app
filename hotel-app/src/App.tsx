@@ -1,22 +1,19 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import AppRouter from './router';
+import './App.css';
 
 
-import './App.css'
-import HotelList from './pages/HotelList';
-import HotelDetails from './pages/HotelDetails';
-
-
-function App() {
-  
+const App: React.FC = () => {
   return (
-    <Router>
-    <Routes>
-      <Route path="/" element={<HotelList />} />
-      <Route path="/hotels" element={<HotelDetails />} />
-    </Routes>
-  </Router>
-  )
-}
+    <div
+    className="min-h-screen bg-fixed bg-cover bg-center"
+    style={{ backgroundImage: "url('/path/to/your/background-image.jpg')" }} // Replace with your image URL
+  >
+    <div className="bg-white/70 min-h-screen">
+    <AppRouter />;
+    </div>
+    </div>
+    );
+};
 
-
-export default App
+export default App;
