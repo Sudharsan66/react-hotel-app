@@ -67,7 +67,6 @@ button:focus-visible {
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+body {
+  @apply bg-fixed bg-cover bg-center bg-gray-900;
+}

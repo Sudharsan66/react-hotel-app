@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { fetchHotelById } from '../services/hotelService';
 import {formatDate} from '../utils/formatDate'
 import { Hotel } from '../types/types';
+import Loader from '../components/loader';
 
 const HotelDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -31,11 +32,7 @@ const HotelDetail: React.FC = () => {
   }, [id]);
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center mt-10">
-        <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
-      </div>
-    );
+    return <Loader size="h-12 w-12" color="border-blue-500" />;
   }
   
 
@@ -78,25 +75,25 @@ const HotelDetail: React.FC = () => {
           {/* Hotel Details */}
           <div className="space-y-6">
             <p className="flex items-center text-gray-600">
-              <strong className="mr-2">Dates of Travel	:</strong>
+              <strong className="mr-2">Dates of Travel :</strong>
               <span>{hotel.datesOfTravel.map(date => formatDate(date)).join(' - ')}</span>
             </p>
     
             {/* Location */}
             <p className="flex items-center text-gray-600">
-              <strong className="mr-2">Location:</strong>
+              <strong className="mr-2">Location :</strong>
               <span>{hotel.location}</span>
             </p>
     
             {/* Rating */}
             <p className="flex items-center text-gray-600">
-              <strong className="mr-2">Rating:</strong>
+              <strong className="mr-2">Rating :</strong>
               <span>{hotel.rating} ⭐</span>
             </p>
     
             {/* Board Basis */}
             <p className="flex items-center text-gray-600">
-              <strong className="mr-2">Board Basis:</strong>
+              <strong className="mr-2">Board Basis :</strong>
               <span>{hotel.boardBasis}</span>
             </p>
     
