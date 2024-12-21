@@ -13,11 +13,6 @@ app.use(cors());
       "location": "Maldives",
       "rating": 4.9,
       "MainimageUrl": "/src/assets/1/hotel1.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
       "datesOfTravel": [
         "2024-01-01",
         "2024-01-07"
@@ -39,12 +34,7 @@ app.use(cors());
       "name": "Mountain Retreat",
       "location": "Swiss Alps",
       "rating": 4.7,
-      "MainimageUrl": "src/assets/2/hotel2.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],     
+      "MainimageUrl": "/src/assets/2/hotel2.jpg",   
       "datesOfTravel": [
         "2024-02-15",
         "2024-02-22"
@@ -62,12 +52,7 @@ app.use(cors());
       "name": "Urban Oasis",
       "location": "New York City, USA",
       "rating": 4.5,
-      "MainimageUrl": "src/assets/3/hotel3.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/3/hotel3.jpg",
       "datesOfTravel": [
         "2024-03-10",
         "2024-03-17"
@@ -89,12 +74,7 @@ app.use(cors());
       "name": "Desert Dream",
       "location": "Dubai, UAE",
       "rating": 4.8,
-      "MainimageUrl": "src/assets/4/hotel4.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/4/hotel4.jpg",
       "datesOfTravel": [
         "2024-04-01",
         "2024-04-10"
@@ -116,12 +96,7 @@ app.use(cors());
       "name": "Tropical Escape",
       "location": "Bali, Indonesia",
       "rating": 4.6,
-      "MainimageUrl": "src/assets/5/hotel5.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/5/hotel5.jpg",
       "datesOfTravel": [
         "2024-05-01",
         "2024-05-10"
@@ -143,12 +118,7 @@ app.use(cors());
       "name": "Historic Haven",
       "location": "Rome, Italy",
       "rating": 4.4,
-      "MainimageUrl": "src/assets/6/hotel6.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],      
+      "MainimageUrl": "/src/assets/6/hotel6.jpg",    
       "datesOfTravel": [
         "2024-06-01",
         "2024-06-07"
@@ -170,12 +140,7 @@ app.use(cors());
       "name": "Safari Lodge",
       "location": "Serengeti, Tanzania",
       "rating": 4.9,
-      "MainimageUrl": "src/assets/7/hotel7.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/7/hotel7.jpg",
       "datesOfTravel": [
         "2024-07-10",
         "2024-07-20"
@@ -197,12 +162,7 @@ app.use(cors());
       "name": "Ocean Breeze",
       "location": "Gold Coast, Australia",
       "rating": 4.3,
-      "MainimageUrl": "src/assets/8/hotel8.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/8/hotel8.jpg",
       "datesOfTravel": [
         "2024-08-01",
         "2024-08-10"
@@ -224,12 +184,7 @@ app.use(cors());
       "name": "Rainforest Retreat",
       "location": "Costa Rica",
       "rating": 4.7,
-      "MainimageUrl": "src/assets/9/hotel9.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/9/hotel9.jpg",
       "datesOfTravel": [
         "2024-09-01",
         "2024-09-15"
@@ -251,12 +206,7 @@ app.use(cors());
       "name": "Island Bliss",
       "location": "Hawaii, USA",
       "rating": 4.8,
-      "MainimageUrl": "src/assets/10/hotel10.jpg",
-      "imageUrls": [
-        "src/assets/1/hotel1-1.jpg",
-        "src/assets/1/hotel1-2.jpg",
-        "src/assets/1/hotel1-3.jpg"
-      ],
+      "MainimageUrl": "/src/assets/10/hotel10.jpg",
       "datesOfTravel": [
         "2024-10-01",
         "2024-10-10"

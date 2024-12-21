@@ -167,7 +167,7 @@ const HotelsList: React.FC = () => {
                         ))}
                       </ul>
                     </td>
-                    <td className="px-6 py-4 border border-gray-300 text-gray-700">
+                    <td className="px-6 py-4 border border-gray-300 text-blue-500">
                       <Link to={`/hotels/${hotel.id}`}>Details</Link>
                     </td>
                   </tr>
