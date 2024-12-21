@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { fetchHotelById } from '../services/hotelService';
 import {formatDate} from '../utils/formatDate'
 import { Hotel } from '../types/types';
-import Loader from '../components/loader';
+import Loader from '../components/loader/loader';
+import "../components/loader/loader.css";
 
 const HotelDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -32,7 +33,7 @@ const HotelDetail: React.FC = () => {
   }, [id]);
 
   if (loading) {
-    return <Loader size="h-12 w-12" color="border-blue-500" />;
+    return <Loader />;
   }
   
 

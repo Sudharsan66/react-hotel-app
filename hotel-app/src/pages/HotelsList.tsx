@@ -4,7 +4,8 @@ import { formatDate } from '../utils/formatDate';
 import { fetchHotels } from '../services/hotelService';
 import { Hotel } from '../types/types';
 import { FaTable, FaThLarge } from 'react-icons/fa';
-import Loader from '../components/loader';
+import Loader from '../components/loader/loader';
+import "../components/loader/loader.css";
 
 const HotelsList: React.FC = () => {
   //declarations
@@ -75,7 +76,7 @@ const HotelsList: React.FC = () => {
   };
 
   if (loading) {
-    return <Loader size="h-12 w-12" color="border-blue-500" />;
+    return <Loader />;
   }
 
   if (error) {
@@ -201,7 +202,7 @@ const HotelsList: React.FC = () => {
           </div>
         )
       ) : (
-        <div className="text-center text-gray-500 mt-6">
+        <div className="text-center text-white mt-6">
           No hotels found. Adjust your search or filter criteria.
         </div>
       )}
@@ -215,7 +216,7 @@ const HotelsList: React.FC = () => {
         >
           Previous
         </button>
-        <span className='text-black'>
+        <span className='text-white'>
           Page {currentPage} of {totalPages || 1}
         </span>
         <button
