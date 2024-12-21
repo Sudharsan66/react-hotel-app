@@ -4,7 +4,8 @@
 
 ### Start API
 
-```cd <hotel-backend>
+``` 
+cd <hotel-backend>
 
 npm install
 
@@ -13,7 +14,8 @@ node server.js
 
 ### Start React Application
 
-``` cd ..
+```
+cd ..
 
 cd <hotel-app>
 
