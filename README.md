@@ -28,13 +28,13 @@ npm run dev
 
 ## List View:
 
-![Hotels List - Table View](screenshots/HotelsList%20-%20Table%20View.png "Hotels List - Table View")
+![Hotels List - Table View](screenshots/HotelsList_TableView.png "Hotels List - Table View")
 
 ## Card View:
 
-![Hotels List - Card View](screenshots/HotelsList-Card%20View.png "Hotels List - Card View")
+![Hotels List - Card View](screenshots/HotelsList_CardView.png "Hotels List - Card View")
 
 ## Hotel Details:
 
-![Hotel Details page](screenshots/HotelDetails%20Page.png "Hotels List - Card View")
+![Hotel Details page](screenshots/HotelDetailsPage.png "Hotels List - Card View")
 
